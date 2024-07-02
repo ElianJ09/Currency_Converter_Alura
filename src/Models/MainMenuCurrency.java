@@ -3,7 +3,7 @@ package Models;
 public class MainMenuCurrency {
     private String menu = """
             ________________________________________________________________________
-                     <     \uD83D\uDCB1Currency Converter\uD83D\uDCB1    >
+                                <     Currency Converter    >
             ________________________________________________________________________
             
                         Welcome to this app to currency converter!
@@ -16,47 +16,39 @@ public class MainMenuCurrency {
             
             ************************************************************************
             
-             1 - Dollar [$USD]              ====>       Argentine peso [$ARS]
+             1 - Dollar [USD]              ====>       Argentine peso [ARS]
                                                                  
-             2 - Argentine peso [$ARS]      ====>       Dollar [$USD]
+             2 - Argentine peso [ARS]      ====>       Dollar [USD]
                                                                  
-             3 - Dollar [$USD]              ====>       Brazilian Real [$BRL]
+             3 - Dollar [USD]              ====>       Brazilian Real [BRL]
                                                      
-             4 - Brazilian Real [$BRL]      ====>       Dollar [$USD]
+             4 - Brazilian Real [BRL]      ====>       Dollar [USD]
                                                                  
-             5 - Dollar [$USD]              ====>       Colombian peso [$COP]
+             5 - Dollar [USD]              ====>       Colombian peso [COP]
                                                                              
-             6 - Colombian peso [$COP]      ====>       Dollar [$USD]
+             6 - Colombian peso [COP]      ====>       Dollar [USD]
                                                                              
-             7 - Dollar [$USD]              ====>       Euro [€ EUR]
+             7 - Dollar [USD]              ====>       Euro [EUR]
                                                                              
-             8 - Euro [€ EUR]               ====>       Dollar [$USD] 
+             8 - Euro [EUR]                 ====>      Dollar [USD] 
             
             **************************************************************************
             """;
+
     private String byeMenu= """
             **************************************************************************
             **********   Thank you to use this app of Currency converter!  ***********
             **************************************************************************
             """;
+
+    //Show the menu
     public void showMenu(){
         System.out.println(menu);
-        System.out.println("Choose a option \uD83D\uDCB1: ");
+        System.out.println("Choose a option: ");
     }
 
-    public String getMenu() {
-        return menu;
-    }
-
-    public void setMenu(String subMenu) {
-        this.menu = subMenu;
-    }
-
-    public String getByeMenu() {
+    //Show bye to the client
+    public String showByeMenu() {
         return byeMenu;
-    }
-
-    public void setByeMenu(String outMenu) {
-        this.byeMenu = outMenu;
     }
 }

@@ -71,9 +71,10 @@ public class CurrencySelect {
     private void currencyCalculatorFunction(String mainCoin, String nameMainCoin, String coinToConverter, String nameCoinToConverter) {
         double valueConverter = coinCalculator.coinsConverter(mainCoin, nameMainCoin, coinToConverter, nameCoinToConverter);
 
+        //Log Formatter to conversions History
         String converterHistory = "Value Converter from " + nameMainCoin + "(" + mainCoin + ") to " + nameCoinToConverter + "(" + coinToConverter + "): " + valueConverter;
         System.out.println(converterHistory);
-        coinsHistory.agregarConversion(converterHistory);
+        coinsHistory.addConversionToCoinsHistory(converterHistory);
     }
 
     private void showHistory(){
