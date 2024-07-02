@@ -13,7 +13,7 @@ public class CurrencyCalculator {
         String valueClient;
 
         //Obtains the elements from the json of the API
-        APIConsultor query = new APIConsultor();
+        APIConsulter query = new APIConsulter();
         String value = listGsonCurrency.toJson(query.searchCoinSelected(coinSelected));
         JsonObject jsonObject = listGsonCurrency.fromJson(value, JsonObject.class);
 
