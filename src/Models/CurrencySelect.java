@@ -32,28 +32,28 @@ public class CurrencySelect {
                     System.out.println(menu.showByeMenu());
                     break;
                 case 1:
-                    currencyCalculatorFunction("USD", "Dólar", "ARS", "Peso argentino");
+                    currencyCalculatorFunction("USD", "Dollar", "ARS", "Argentine Peso");
                     break;
                 case 2:
-                    currencyCalculatorFunction("ARS", "Peso argentino", "USD", "Dólar");
+                    currencyCalculatorFunction("ARS", "Argentine Peso", "USD", "Dollar");
                     break;
                 case 3:
-                    currencyCalculatorFunction("USD", "Dólar", "BRL", "Real brasileño");
+                    currencyCalculatorFunction("USD", "Dollar", "BRL", "Brazilian Real");
                     break;
                 case 4:
-                    currencyCalculatorFunction("BRL", "Real brasileño", "USD", "Dólar");
+                    currencyCalculatorFunction("BRL", "Brazilian Real", "USD", "Dollar");
                     break;
                 case 5:
-                    currencyCalculatorFunction("USD", "Dólar", "COP", "Peso colombiano");
+                    currencyCalculatorFunction("USD", "Dollar", "COP", "Colombian Peso");
                     break;
                 case 6:
-                    currencyCalculatorFunction("COP", "Peso colombiano", "USD", "Dólar");
+                    currencyCalculatorFunction("COP", "Colombian Peso", "USD", "Dollar");
                     break;
                 case 7:
-                    currencyCalculatorFunction("USD", "Dólar", "EUR", "Euro");
+                    currencyCalculatorFunction("USD", "Dollar", "EUR", "Euro");
                     break;
                 case 8:
-                    currencyCalculatorFunction("EUR", "Euro", "USD", "Dólar");
+                    currencyCalculatorFunction("EUR", "Euro", "USD", "Dollar");
                     break;
                 case 9:
                     //Show the currency history
@@ -73,7 +73,6 @@ public class CurrencySelect {
 
         //Log Formatter to conversions History
         String converterHistory = "Value Converter from " + nameMainCoin + "(" + mainCoin + ") to " + nameCoinToConverter + "(" + coinToConverter + "): " + valueConverter;
-        System.out.println(converterHistory);
         coinsHistory.addConversionToCoinsHistory(converterHistory);
     }
 

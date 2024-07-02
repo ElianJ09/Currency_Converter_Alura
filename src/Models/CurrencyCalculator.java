@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class CurrencyCalculator {
     Gson listGsonCurrency = new GsonBuilder().setPrettyPrinting().create();
     Scanner scanner = new Scanner(System.in);
+    private final MainMenuCurrency menu = new MainMenuCurrency();
 
     public double coinsConverter(String coinSelected, String nameCoinSelected, String coinToConverter, String nameCoinToConverter) {
         String valueClient;
@@ -39,13 +40,7 @@ public class CurrencyCalculator {
             String conversionValueFromDouble =   String.format("%.2f", conversionValue);
             System.out.println(valueCoverterToDouble + " " + nameCoinSelected + " " + "====>" + " " + conversionValueFromDouble + " " + nameCoinToConverter);
 
-            System.out.println("""
-            __________________________________________________________________
-            Press zero (0) if you want left.");
-            Press another number [1-8] to continue do convertions);
-            __________________________________________________________________
-            """);
-
+            menu.showMenu();
             return conversionValue;
         }
         return 0.0; //Just in Case
