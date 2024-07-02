@@ -1,2 +1,4 @@
-package Models;public class APIConsultor {
+package Models;
+
+public class APIConsultor {
 }

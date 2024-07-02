@@ -1,5 +1,11 @@
+package Main;
+
+import Models.CurrencySelect;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        CurrencySelect CoinSelected = new CurrencySelect();
+        CoinSelected.select();
     }
 }

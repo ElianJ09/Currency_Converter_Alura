@@ -1,2 +1,4 @@
-package Models;public class CurrencyCalculator {
+package Models;
+
+public class CurrencyCalculator {
 }
